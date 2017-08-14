@@ -89,7 +89,7 @@ function tick(startPoint, endPoint) {
 	animIndex+=0.2;
 
 	// Draw trail
-	var nextPoint	=	google.maps.geometry.spherical.interpolate(startPoint,endPoint,animIndex/100);
+	var nextPoint = google.maps.geometry.spherical.interpolate(startPoint,endPoint,animIndex/100);
 	trailPath.setPath([startPoint, nextPoint]);
 
 	// Move the plane
